@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script> -->
+    
+    
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <div class="landingpage">
+        <h1 id="a">Kalkulator do analizy porównawczej różnych systemów ogrzewania domów mieszkalnych</h1>
+        <button>Oblicz</button>
+    
+    </div> -->
+    
+
+    <header>
+    <h2 id="b">Kalkulator do analizy porównawczej różnych systemów ogrzewania domów mieszkalnych</h2>
+    <img class ="logopg" src="https://eia.pg.edu.pl/themes/custom/politechnika_gdanska/images/pg-logotyp.svg">
+    <img class ="logoeia" src="https://eia.pg.edu.pl/themes/custom/politechnika_gdanska/images/pg-logotyp-eia.svg">
+    </header>
+
+    <div class="containerbig">
+        <div class="containersmall">
+        <div class="inputs">
+            <h3>Dane budynku</h3>
+            <!-- <div class="meters">
+        <label for="meters">Metraż budynku:</label>
+        <input type="number" value="" id="meters">
+        <span>m<sup>2</sup></span>
+         </div> -->
+
+         <div class="length">
+            <label for="length">Dlugosc jednego boku: </label>
+            <input type="number" value="" id="length">
+            <span>m</span>
+             </div>
+        
+         <div class="width">
+            <label for="width">Dlugosc drugiego boku: </label>
+            <input type="number" value="" id="width">
+            <span>m</span>
+             </div>
+
+         <div class="height">
+            <label for="height">Wysokosc kondygnacji: </label>
+            <input type="number" value="" id="height">
+            <span>m</span>
+            </div>   
+        
+            <div clas="stories">
+                <label for="stories">Liczba pieter:</label>
+                <select id="stories" name="stories">
+                 <option value=1>Dom parterowy</option>
+                 <option value=2>2 pietra</option>
+                 <option value=2>3 pietra</option>
+                 </select>
+            </div>
+           
+            <div class="year">
+                <label for="year">Rok budowy:</label>
+                <select id="year" name="year">
+                 <option value="2021">2021 lub później</option>
+                 <option value="2014">2014-2021</option>
+                 <option value="2002">2002-2014</option>
+                 <option value="1991">1991-2002</option>
+                 <option value="1982">1982-1991</option>
+                 <option value="1974">przed 1982</option>
+                </select>
+            </div>
+            
+            <div class="climate">
+                <label for="climate">Strefa klimatyczna</label>
+                <select id="climate" name="climate">
+                <option value="1">I</option>
+                <option value="2">II</option>
+                <option value="3">III</option>
+                <option value="4">IV</option>
+                <option value="5">V</option>
+                </select>
+            </div>
+
+        <!-- <div clas="buildingtype">
+            <label for="buildingtype">Rodzaj budynku:</label>
+            <select id="buildingtype" name="buildingtype">
+             <option value="Dom jednorodzinny">Dom jednorodzinny</option>
+             <option value="Szereg">Szereg</option>
+             </select>
+        </div> -->
+
+        <div clas="heatstorage">
+            <label for="heatstorage">Zasobnik ciepla:</label>
+            <select id="heatstorage" name="heatstorage">
+             <option value="false">Nie</option>
+             <option value="true">Tak</option>
+             </select>
+        </div>
+
+        </div>
+        <div class="map">
+        <img class="mapimg" src="https://strzeszewski.is.pw.edu.pl/articles/kluczowe_zmiany/PN-rys1.gif">
+        </div> 
+        
+        
+        
+    </div>
+    <div class="results">
+        <h3>Wyniki</h3>
+        <h4>Laczne zuzycie ciepla wynosi: <span id="qco"></span></h4>
+        <table>
+            <!-- <tr><th>System ogrzewania</th><th>Koszt</th><th>Emisja</th></th></th><th>Zuzycie</th></tr> -->
+            <tr><td>Rodzaj nośnika/technologii</td><td><span id="use">Zuzycie</span></td><td><span id="price">Koszt</span></td><td><span id="emission">Emisja CO2</span></td></td></td></tr>
+            <tr><td>Węgiel kamienny</td><td><span id="usecoal"></span></td><td><span id="pricecoal"></span></td><td><span id="emissioncoal"></span></td></td></td></tr>
+            <tr><td>LPG</td><td><span id="uselpg"></span></td><td><span id="pricelpg"></span></td><td><span id="emissionlpg"></span></td></td></td></tr>
+            <tr><td>Gaz ziemny</td><td><span id="usegas"></span></td><td><span id="pricegas"></span></td><td><span id="emissiongas"></span></td></td></td></tr>
+            <tr><td>Ciepło sieciowe - elektrociepłownia</td><td><span id="usenetcogen"></span></td><td><span id="pricenetcogen"></span></td><td><span id="emissionnetcogen"></span></td></td></td></tr>
+            <tr><td>Ciepło sieciowe - ciepłownia</td><td><span id="usenetplant"></span></td><td><span id="pricenetplant"></span></td><td><span id="emissionnetplant"></span></td></td></td></tr>
+            <tr><td>Pompa ciepła woda/woda</td><td><span id="usehpww"></span></td><td><span id="pricehpww"></span></td><td><span id="emissionhpww"></span></td></td></td></tr>
+            <tr><td>Pompa ciepła glikol/woda</td><td><span id="usehpgw"></span></td><td><span id="pricehpgw"></span></td><td><span id="emissionhpgw"></span></td></td></td></tr>
+            <tr><td>Pompa ciepła powietrze/woda</td><td><span id="usehpaw"></span></td><td><span id="pricehpaw"></span></td><td><span id="emissionhpaw"></span></td></td></td></tr>
+            <tr><td>Pompa ciepła bezpośr. odparowanie/woda</td><td><span id="usehpbw"></span></td><td><span id="pricehpbw"></span></td><td><span id="emissionhpbw"></span></td></td></td></tr>
+            <tr><td>Grzejnik elektryczny</td><td><span id="useel"></span></td><td><span id="priceel"></span></td><td><span id="emissionel"></span></td></td></td></tr>
+            <tr><td>Biomasa stała - kominek</td><td><span id="usewood"></span></td><td><span id="pricewood"></span></td><td><span id="emissionwood"></span></td></td></td></tr>
+            <tr><td>Biomasa stała - kocioł</td><td><span id="usepelet"></span></td><td><span id="pricepelet"></span></td><td><span id="emissionpelet"></span></td></td></td></tr>            
+            <tr><td>Olej opałowy</td><td><span id="useoil"></span></td><td><span id="priceoil"></span></td><td><span id="emissionoil"></span></td></td></td></tr>
+            <!-- <tr><td>Pelet</td><td>koszt</td><td>emisja</td></td></td><td>zuzycie</td></tr> -->
+        </table>
+    </div>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script> 
+
+</body>
+</html>

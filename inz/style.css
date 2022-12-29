@@ -1,0 +1,183 @@
+html {
+    background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin:0;
+}
+
+/* .landingpage {
+    background-color: #153657;
+    width: 100%; 
+	height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+h1 {
+    font-size: 40px;
+    font-weight: 10;
+    text-align: center;
+    color: whitesmoke;
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+button {
+    font-size:18px;
+    text-decoration:none;
+    color:#242326;
+    border:#242326 1px solid;
+    padding:10px 20px;
+    border-radius:10px;
+    margin-top:20px;
+} */
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #043864;
+    /* height: 150px; */
+}
+ 
+h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 2rem 5rem 2rem 1.1rem;
+    
+}
+
+.logopg {
+    height: 80px;
+    margin: 2rem 0 2rem 0;
+    /* filter: brightness(0) saturate(100%) invert(16%) sepia(9%) saturate(6676%) hue-rotate(176deg) brightness(98%) contrast(103%); */
+}
+
+.logoeia {
+    height: 70px;
+    margin: 2rem 2em 2rem 2em;
+    /* filter: brightness(0) saturate(100%) invert(16%) sepia(9%) saturate(6676%) hue-rotate(176deg) brightness(98%) contrast(103%); */
+}
+
+@media only screen and (max-width: 750px) {
+    
+    h2 {
+        font-size: 1em;
+        margin: 2rem 2rem 2rem 1.1rem;
+        padding: 0;
+    
+    }
+
+    .logopg {
+        height: 50px;
+        margin: 2rem 0 2rem 0;
+        /* filter: brightness(0) saturate(100%) invert(16%) sepia(9%) saturate(6676%) hue-rotate(176deg) brightness(98%) contrast(103%); */
+    }
+    .logoeia {
+        height: 50px;
+        margin: 2rem 2em 2rem 2em;
+        /* filter: brightness(0) saturate(100%) invert(16%) sepia(9%) saturate(6676%) hue-rotate(176deg) brightness(98%) contrast(103%); */
+    }
+}
+
+
+
+.containerbig {
+    /* background-color: #295E94; */
+    background-color:#F7FAFD;
+    width: 100%; 
+	margin: 0; 
+	height: 1200px; 
+    
+}
+
+.containersmall {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.inputs {
+    /* height: 30%; */
+    color: #092643;
+    padding: 1rem 0 0 1.5rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+.map {
+    padding: 1rem 0 0 3rem;
+}
+
+.mapimg {
+    height:85%;
+    
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+hr {
+    height: 1px;
+    background-color: #092643;
+}
+
+input {
+    margin-left: 1.1em;
+    margin-top: 0.6em;
+}
+
+select {
+    margin-left: 1.1em;
+    margin-top: 0.6em;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+/* #meters {
+    margin-left: 3em;
+
+} */
+/* 
+#buildingtype {
+    margin-left:3em;
+    margin-top: 1.5em;
+} */
+
+ /* #year {
+    margin-left: 4.9em;
+    margin-top: 1.5em;
+} */
+
+.results {
+    padding: 1rem 0 0 1.5rem;
+    color: #092643;;
+}
+
+table {
+    width: 80%;
+}
+
+/* .arrowcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 8px;
+  }
+  
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  } */
